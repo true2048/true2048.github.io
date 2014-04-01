@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html xmlns:wb=“http://open.weibo.com/wb”>
+<head>
+    <meta charset="utf-8">
+    <title>2048武书连2014版 - 5*5</title>
+
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport"
+          content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <meta property="og:title" content="2048 game"/>
+    <meta property="og:site_name" content="2048 game"/>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="container">
+    <p class="game-explanation" style="text-align:center;">
+        <strong class="important">2048武书连2014版 - 5*5<a href="http://true2048.github.io/" target="_blank">(更多不同版本)</a></strong>
+    </p>
+    <hr>
+
+    <div class="heading">
+        <h1 class="title">武书连2014</br>一定上北大！</h1>
+
+        <div class="scores-container">
+            <div class="score-container">0</div>
+            <div class="best-container">0</div>
+        </div>
+    </div>
+    <p class="game-intro">合并方块，拼命也要上 <strong>北大！</strong> 实在不行，就清华或者浙大吧...</p>
+
+    <div class="game-container">
+        <div class="game-message">
+            <p></p>
+
+            <div class="lower">
+                <a class="retry-button">Try again</a>
+
+                <div class="score-sharing"></div>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+        </div>
+
+        <div class="tile-container">
+
+        </div>
+    </div>
+
+    <p class="game-explanation">
+        <strong class="important">规则:</strong> 使用 <strong>上下左右键</strong>
+        移动方块（触屏设备请直接滑动手指），相同的两个朝代合并后会变成 <strong>更新的一个</strong>。
+    </p>
+    <hr>
+    <p>
+        <br>by <a href="https://twitter.com/True2048" target="_blank">2048</a>
+        <div class="sharing">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="快来玩2048朝代版!!! #many2048" data-via="True2048" data-url="http://true2048.github.io/versions/chaodai5" data-counturl="http://true2048.github.io/">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <wb:share-button addition="number" type="button" default_text="2048 各种版本！！！ 朝代版！" ralateUid="5091678934" pic="http%3A%2F%2Ftrue2048.github.io%2Fversions%2Fchaodai5%2Ffavicon.ico"></wb:share-button>
+        </div>
+    </p>
+</div>
+
+<script src="js/animframe_polyfill.js"></script>
+<script src="js/keyboard_input_manager.js"></script>
+<script src="js/html_actuator.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/tile.js"></script>
+<script src="js/local_score_manager.js"></script>
+<script src="js/game_manager.js"></script>
+<script src="js/application.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-49529729-1', 'true2048.github.io');
+    ga('send', 'pageview');
+
+</script>
+
+<img border="0" src="style/131072.jpg" width="0" height="0"><img border="0" src="style/65536.jpg"
+                                                                 width="0" height="0">
+</body>
+</html>
