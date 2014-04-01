@@ -157,6 +157,7 @@ HTMLActuator.prototype.message = function (won) {
 
   this.clearContainer(this.sharingContainer);
   this.sharingContainer.appendChild(this.scoreTweetButton());
+  // this.sharingContainer.appendChild(this.scoreWeiboButton());
   twttr.widgets.load();
 };
 
@@ -181,3 +182,9 @@ HTMLActuator.prototype.scoreTweetButton = function () {
 
   return tweet;
 };
+
+// HTMLActuator.prototype.scoreWeiboButton = function () {
+//   var text = "我赢了" + this.score + " 分在2048朝代版本！#2048朝代版";
+//   <wb:share-button addition="number" type="button" default_text=text ralateUid="5091678934" pic="http%3A%2F%2Ftrue2048.github.io%2Fversions%2Fchaodai5%2Ffavicon.ico"></wb:share-button>
+//   return tweet;
+// };
