@@ -353,7 +353,8 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 32px; }
+    font-size: 32px;
+    line-height: 40px; }
   .tile.tile-2 .tile-inner {
     background: #eee4da;
     font-size:28px;
