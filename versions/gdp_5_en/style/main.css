@@ -397,6 +397,7 @@ hr {
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-4096 .tile-inner {
     background: #ffe697;
+    font-size:20px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-8192 .tile-inner {
     background: #ffeaa8;

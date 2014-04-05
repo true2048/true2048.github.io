@@ -151,25 +151,25 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="加油，看看中国第几！";
-  mytxt[1]="加油，看看中国第几！";
-  mytxt[2]="加油，看看中国第几！";
-  mytxt[3]="加油，看看中国第几！";
-  mytxt[4]="加油，看看中国第几！";
-  mytxt[5]="加油，看看中国第几！";
-  mytxt[6]="加油，看看中国第几！";
-  mytxt[7]="加油，看看中国第几！";
-  mytxt[8]="加油，看看中国第几！";
-  mytxt[9]="加油，看看中国第几！";
-  mytxt[10]="加油，看看中国第几！";
-  mytxt[11]="加油，看看中国第几！";
-  mytxt[12]="第一是谁？";
-  mytxt[13]="第一是谁？";
+  mytxt[0]="Have you seen your country?";
+  mytxt[1]="Have you seen your country?";
+  mytxt[2]="Have you seen your country?";
+  mytxt[3]="Have you seen your country?";
+  mytxt[4]="Have you seen your country?";
+  mytxt[5]="Have you seen your country?";
+  mytxt[6]="Have you seen your country?";
+  mytxt[7]="Have you seen your country?";
+  mytxt[8]="Have you seen your country?";
+  mytxt[9]="Have you seen your country?";
+  mytxt[10]="Have you seen your country?";
+  mytxt[11]="Have you seen your country?";
+  mytxt[12]="Who's the number 1?";
+  mytxt[13]="Who's the number 1?";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "北大万岁！" : mytxt[text3(maxscore)-3];
+  var message = won ? "USA is the No.1!" : mytxt[text3(maxscore)-3];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -194,12 +194,12 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.setAttribute("data-via", "true2048");
-  tweet.setAttribute("data-url", "http://true2048.github.io/versions/chaodai5/");
-  tweet.setAttribute("data-counturl", "http://true2048.github.io/versions/chaodai5/");
+  tweet.setAttribute("data-url", "http://true2048.github.io/versions/gdp_5_en/");
+  tweet.setAttribute("data-counturl", "http://true2048.github.io/versions/gdp_5_en/");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at 2048 wushulian 2014 edition, a game where you " +
-             "join numbers to score high! #wushulian";
+  var text = "I scored " + this.score + " points at 2048 GDP edition, a game where you " +
+             "join numbers to score high! #GDP";
   tweet.setAttribute("data-text", text);
 
   return tweet;
